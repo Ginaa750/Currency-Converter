@@ -1,44 +1,17 @@
-/*
-  The following Tailwind directives require Tailwind CSS and PostCSS processing.
-  Make sure your build tool (like PostCSS with Tailwind plugin) is configured.
-*/
-/* Tailwind directives removed because Tailwind CSS is not configured or not being used. 
-   If you intend to use Tailwind, ensure your build tool is set up correctly. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* Dark & light background helpers used in <App> */
+/* Dark/Light background helpers */
 .bg-grid-dark {
   background-image:
-    radial-gradient(1200px 600px at -10% -10%, rgba(34,211,238,0.12), transparent 55%),
-    radial-gradient(1200px 700px at 110% 0%, rgba(167,139,250,0.12), transparent 55%),
-    linear-gradient(180deg, #eceff3 0%, #85195679 100%);
+    radial-gradient(1200px 600px at -10% -10%, rgba(255, 255, 255, 0.12), transparent 55%),
+    radial-gradient(1200px 700px at 110% 0%, rgba(52, 215, 120, 0.12), transparent 55%),
+    linear-gradient(180deg, #ffffff 0%, #368726 100%);
 }
-
 .bg-grid-light {
   background:
     radial-gradient(1200px 600px at -10% -10%, rgba(6,182,212,0.10), transparent 55%),
     radial-gradient(1200px 700px at 110% 0%, rgba(139,92,246,0.10), transparent 55%),
-    linear-gradient(180deg, #f8fafc 0%, #2c2f3a 100%);
-}
-
-/* subtle hover lift */
-.btn {
-  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.2s ease, opacity 0.2s ease;
-}
-.btn:hover { transform: translateY(-1px); }
-
-/* glass card */
-.card {
-  border-radius: 28px;
-  border: 1px solid rgba(255,255,255,0.1);
-  padding: 2rem;
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(24px);
-  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.3), 0 4px 6px -1px rgba(0,0,0,0.06);
-}
-
-/* For responsive padding (md:p-10), add a media query */
-@media (min-widt: 768px) {
-  .card {
-    padding: 2.5rem;
-  }
+    linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
 }

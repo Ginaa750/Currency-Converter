@@ -1,4 +1,5 @@
 import { formatMoney } from "../utils/format.js";
+<AlertsPanel from={from} to={to} rate={rate} onRefresh={refreshRate} />
 
 export default function ResultCard({
   from, to, amount, converted, rate, date, loading, error, sameCurrency,
