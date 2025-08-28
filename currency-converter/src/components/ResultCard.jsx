@@ -19,6 +19,7 @@ export default function ResultCard({
         {error}
       </div>
     );
+    
   }
 
   return (
